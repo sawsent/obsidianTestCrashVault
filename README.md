@@ -2,8 +2,6 @@ This vault is to reproduce the weird bug I found covered [here](https://forum.ob
 
 Opening [[Crash Content CRLF]] will crash your obsidian. 
 
-If you open crash.md in some other editor, change line endings to LF, and restart obsidian, there will be no crash.
+If you open crash.md in some other editor, change line endings to LF, and restart obsidian, there will be no crash if you open it.
 
-If you open [[Crash Content LF]], you will see exactly what is in [[Crash Content CRLF]], but with LF line endings, so it will not crash.
-
-If you open another editor, change [[Crash Content LF]] line endings to CRLF, and open the note, obsidian will crash.
+If when you clone the repo line endings are automatically updated to `LF`, going into another editor and changing [[Crash Content CRLF]] line endings back to `CRLF` will make it crash again.
